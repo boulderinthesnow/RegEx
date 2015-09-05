@@ -13,4 +13,9 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  encoding: unicode
+  database: postgresql-sinuous-7689
+  pool: 5
+  username: mwilliamsnov6@gmail.com
+  password:
