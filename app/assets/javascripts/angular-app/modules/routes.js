@@ -1,22 +1,8 @@
 budget.config(function($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.otherwise('budgets');
+  $urlRouterProvider.otherwise('/');
 
-  $stateProvider.state('budgets', {
-    url: '/budgets',
-    templateUrl: 'budgets.html'
-  });
-
-  $stateProvider.state('budget', {
-    url: '/budgets/:budgetId',
-    templateUrl: 'budget.html'
-  });
-
-  $stateProvider.state('new-budget', {
-    url: '/create-new-budget',
-    templateUrl: 'new_budget.html'
-  });
-
-  $stateProvider.state('income', {
-    templateUrl: 'income.html'
+  $stateProvider.state('/', {
+    url: '/',
+    templateUrl: 'splash.html'
   });
 });
