@@ -30,5 +30,16 @@ module CLI
       system 'npm install'
       system 'bower install'
     end
+
+    desc 'deploy', 'Deploy the app to Heroku'
+    def deploy
+      puts 'Did you precompile your assets with "RAILS_ENV=production bundle exec rake assets:precompile" and commit those new files?'
+      system 'git push heroku master'
+    end
+
+    desc 'ship', 'Push changes to github'
+    def ship
+      system 'git push origin master'
+    end
   end
 end
