@@ -41,5 +41,13 @@ module CLI
     def ship
       system 'git push origin master'
     end
+
+    desc 'server', 'Spin up a development server'
+    def server
+      system 'regex install'
+      system 'regex db migrate development'
+      system 'rake assets:precompile'
+      system 'rails s'
+    end
   end
 end

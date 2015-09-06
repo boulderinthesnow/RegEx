@@ -10,6 +10,11 @@ module CLI
       migrate('production')
     end
 
+    desc 'development', 'Migrate the development database'
+    def development
+      migrate('development')
+    end
+
     private
 
     def migrate(environment)

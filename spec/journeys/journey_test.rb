@@ -8,5 +8,7 @@ describe 'when a user makes a budget' do
   it 'lets a user make budgets' do
     now.visit_app
     then_expect.to_see_the_regex_splash_page
+    now.click_button_to_go_to_all_puzzles
+    then_expect.to_see_the_list_of_puzzles
   end
 end

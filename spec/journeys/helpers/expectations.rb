@@ -8,4 +8,10 @@ class Expectations
     puts 'Looking for the splash page...'
     expect(page).to have_content 'Welcome to RegEx.io'
   end
+
+  def to_see_the_list_of_puzzles
+    puts 'Looking for the list of puzzles...'
+    expect(page).to have_content 'First Puzzle'
+    expect(page).to have_content 'Second Puzzle'
+  end
 end
