@@ -7,10 +7,10 @@ gem 'sass-rails', '~> 5.0'
 gem 'jbuilder', '~> 2.0'
 gem 'turbolinks', '~> 2.0'
 gem 'angular-rails-templates', '~> 0.2.0'
-gem 'thor'
+gem 'rake', '10.1.0'
 
 group :production do
-  gem 'pg'
+  gem 'thor', '0.19.1'
   gem 'rails_12factor'
 end
 

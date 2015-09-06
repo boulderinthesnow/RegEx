@@ -19,9 +19,9 @@ module CLI
 
     desc 'test', 'Run all tests'
     def test
-      system 'budget js test'
-      system 'budget api test'
-      system 'budget journeys test'
+      system 'regex js test'
+      system 'regex api test'
+      system 'regex journeys test'
     end
 
     desc 'install', 'Install all needed dependencies'
