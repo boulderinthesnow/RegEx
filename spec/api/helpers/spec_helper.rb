@@ -1,4 +1,4 @@
-require_relative '../../spec_helper_root'
+require_relative '../../spec_helper'
 require 'rspec/rails'
 require 'factory_girl'
 

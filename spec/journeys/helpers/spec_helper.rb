@@ -1,4 +1,4 @@
-require_relative '../../spec_helper_root'
+require_relative '../../spec_helper'
 require 'pry'
 require 'capybara/rails'
 require 'capybara/rspec'
