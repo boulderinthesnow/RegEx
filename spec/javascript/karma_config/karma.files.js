@@ -12,14 +12,12 @@ var KarmaFiles = function() {
     'app/assets/javascripts/angular-app/templates/*.html',
     'app/assets/javascripts/angular-app/modules/module.js',
     'app/assets/javascripts/angular-app/modules/routes.js',
-    'app/assets/javascripts/angular-app/repositories/*',
     'app/assets/javascripts/angular-app/controllers/*'
   ];
 
   var test_files = [
     'spec/javascript/helpers/inject_dependencies.js',
     'spec/javascript/helpers/*.js',
-    'spec/javascript/repositories/*',
     'spec/javascript/views/*'
   ];
 
