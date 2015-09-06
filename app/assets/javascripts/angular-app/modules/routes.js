@@ -3,10 +3,11 @@ budget.config(function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider.state('/', {
         url: '/',
-        templateUrl: 'splash.html',
+        templateUrl: 'splash.html'
     });
 
     $stateProvider.state('all', {
+      url: '/all',
       templateUrl: 'all.html'
     });
 });
