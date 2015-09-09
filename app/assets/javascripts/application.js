@@ -5,5 +5,6 @@
 //= require angular-rails-templates
 //= require_tree ./angular-app/modules
 //= require_tree ./angular-app/templates
+//= require_tree ./angular-app/controllers
 //= require_tree ./angular-app/repositories
 //= require_tree .

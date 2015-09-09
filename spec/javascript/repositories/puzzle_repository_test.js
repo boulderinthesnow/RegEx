@@ -5,12 +5,14 @@ describe('The Puzzle Repository', function(){
 	});
 
     describe('#all', function() {
-		fit('returns the fetched puzzles to the caller via a GET request to /api/puzzles', function() {
-			this.$httpBackend.whenGET('/api/puzzles').respond(this.Http.succeedToMakeRequest('some-response'));
-			var response = this.PuzzleRepository.all();
-			this.$httpBackend.flush();
+		it('returns the fetched puzzles to the caller via a GET request to /api/puzzles', function() {
+			var response;
+			spyOn(this.PuzzleRepository, 'all').and.returnValue(this.Http.succeedToMakeRequest('some-response'));
+			this.PuzzleRepository.all().success(function(stuff) {
+				response = stuff;
+			});
 			expect(response).toEqual('some-response');
 		});
-    });
+	});
 });
 

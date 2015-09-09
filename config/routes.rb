@@ -5,5 +5,6 @@ Rails.application.routes.draw do
     resources :budgets do
       resource :income
     end
+    resources :puzzles
   end
 end
