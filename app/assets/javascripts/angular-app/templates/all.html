@@ -1,2 +1,14 @@
-<div>First Puzzle</div>
-<div>Second Puzzle</div>
+<div ng-controller="AllPuzzlesController">
+	<table>
+		<thead>
+			<tr>
+				<th>Puzzles</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="puzzle in allPuzzles.puzzles">
+				<td>{{puzzle.name}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

@@ -12,13 +12,15 @@ var KarmaFiles = function() {
     'app/assets/javascripts/angular-app/templates/*.html',
     'app/assets/javascripts/angular-app/modules/module.js',
     'app/assets/javascripts/angular-app/modules/routes.js',
-    'app/assets/javascripts/angular-app/controllers/*'
+    'app/assets/javascripts/angular-app/controllers/*',
+    'app/assets/javascripts/angular-app/repositories/*'
   ];
 
   var test_files = [
     'spec/javascript/helpers/inject_dependencies.js',
     'spec/javascript/helpers/*.js',
-    'spec/javascript/views/*'
+    'spec/javascript/views/*',
+    'spec/javascript/repositories/*'
   ];
 
   this.files = dependencies.concat(application_files, test_files);

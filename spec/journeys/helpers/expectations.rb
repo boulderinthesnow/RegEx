@@ -6,7 +6,7 @@ class Expectations
 
   def to_see_the_regex_splash_page
     puts 'Looking for the splash page...'
-    expect(page).to have_content 'Welcome to RegEx.io'
+    expect(page).to have_content 'Welcome to RegEx.rocks'
   end
 
   def to_see_the_list_of_puzzles
